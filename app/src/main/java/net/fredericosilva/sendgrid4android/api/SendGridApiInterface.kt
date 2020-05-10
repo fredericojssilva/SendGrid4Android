@@ -7,6 +7,6 @@ import retrofit2.http.POST
 
 internal interface SendGridApiInterface {
     @POST("mail/send")
-    fun sendEmail(@Body body: Mail) : Call<Any>
+    fun sendEmail(@Body body: Mail) : Call<Void>
 
 }
