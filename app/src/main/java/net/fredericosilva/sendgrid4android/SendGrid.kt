@@ -5,7 +5,14 @@ import net.fredericosilva.sendgrid4android.models.Mail
 import net.fredericosilva.sendgrid4android.models.SendGridBody
 
 
-class SendGrid(apiKey: String) {
+class SendGrid() {
+
+    companion object{
+        fun init(apiKey: String, debug: Boolean)
+        {
+            SendGridApiService.init(apiKey, debug)
+        }
+    }
 
     fun send(mail: Mail) {
 
