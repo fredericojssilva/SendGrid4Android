@@ -8,7 +8,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object SendGridApiService {
+internal object SendGridApiService {
     const val BASEURL = "https://api.sendgrid.com/v3/"
     private lateinit var service: SendGridApiInterface
 
