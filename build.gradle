@@ -14,8 +14,6 @@ buildscript {
   }
 }
 
-apply plugin: 'com.android.library'
-
 allprojects {
   repositories {
     google()
