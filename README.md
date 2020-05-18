@@ -7,7 +7,7 @@ SendGrid library for Android
 ## Download
 Grab it via Gradle:
 
-```implementation 'com.github.fredericojssilva:SendGrid4Android:0.1'```
+```implementation 'com.github.fredericojssilva:SendGrid4Android:0.2'```
 
 ## Usage
 
