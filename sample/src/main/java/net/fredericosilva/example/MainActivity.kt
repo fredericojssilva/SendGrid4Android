@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        SendGrid.init(API_KEY, debug = true)
+        SendGrid.init(API_KEY)
 
         send.setOnClickListener {
             sendEmail(toEmailEditText.text.toString(), contentEmailEditText.text.toString())
