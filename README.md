@@ -7,12 +7,12 @@ SendGrid library for Android
 ## Download
 Grab it via Gradle:
 
-```implementation 'com.github.fredericojssilva:SendGrid4Android:0.1'```
+```implementation 'com.github.fredericojssilva:SendGrid4Android:0.2'```
 
 ## Usage
 
 Extended:
-```
+```kotlin
 //init lib
 SendGrid.init(API_KEY)
 
@@ -39,7 +39,7 @@ SendGrid().send(mail)
 ```
 
 Simple:
-```
+```kotlin
 //init lib
 SendGrid.init(API_KEY)
 val mail = Mail.SimpleMail(toEmail, listOf(fromEmail), subject, content)
