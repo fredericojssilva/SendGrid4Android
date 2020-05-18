@@ -9,6 +9,8 @@ import net.fredericosilva.sendgrid4android.models.*
 class MainActivity : AppCompatActivity() {
 
     val API_KEY = "#APIKEY"
+    val fromEmail = "example@email.com"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sendEmail(toEmail: String, content: String) {
-        val fromEmail = "example@email.com"
         val mail = Mail(
             personalizations = listOf(Personalizations(listOf(Email(toEmail)))),
             from = Email(fromEmail),
@@ -41,5 +42,11 @@ class MainActivity : AppCompatActivity() {
         // mail.attachments = listOf(Attachment(file= file, filename = "file.extension"))
 
         SendGrid().send(mail)
+    }
+
+    private fun sendEmailUsingSimpleClass(toEmail: String, content: String){
+        val mail = Mail.SimpleMail(toEmail, listOf(fromEmail), "Subject", content)
+        SendGrid().send(mail)
+
     }
 }
