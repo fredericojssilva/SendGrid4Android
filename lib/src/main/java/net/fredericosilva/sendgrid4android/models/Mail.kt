@@ -12,7 +12,7 @@ data class Mail(
         val to: List<String>,
         val subject: String?,
         val content: String,
-        val attachments: List<Attachment>?
+        val attachments: List<Attachment>? = ArrayList()
     ) {
         fun getMail(): Mail {
             val toEmailList = ArrayList<Email>()
