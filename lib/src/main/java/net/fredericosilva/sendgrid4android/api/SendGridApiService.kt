@@ -3,7 +3,6 @@ package net.fredericosilva.sendgrid4android.api
 import android.util.Log
 import net.fredericosilva.sendgrid4android.SendGrid
 import net.fredericosilva.sendgrid4android.models.Mail
-import net.fredericosilva.sendgrid4android.models.SendGridBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.logging.HttpLoggingInterceptor
