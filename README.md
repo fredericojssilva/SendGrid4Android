@@ -12,7 +12,7 @@ Grab it via Gradle:
 ## Usage
 
 Extended:
-```
+```kotlin
 //init lib
 SendGrid.init(API_KEY)
 
@@ -39,7 +39,7 @@ SendGrid().send(mail)
 ```
 
 Simple:
-```
+```kotlin
 //init lib
 SendGrid.init(API_KEY)
 val mail = Mail.SimpleMail(toEmail, listOf(fromEmail), subject, content)
