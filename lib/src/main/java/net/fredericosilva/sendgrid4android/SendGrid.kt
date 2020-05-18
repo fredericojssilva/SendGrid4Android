@@ -8,7 +8,7 @@ import net.fredericosilva.sendgrid4android.models.SendGridBody
 class SendGrid(val callback: Callback? = null) {
 
     companion object {
-        fun init(apiKey: String, debug: Boolean) {
+        fun init(apiKey: String, debug: Boolean = false) {
             SendGridApiService.init(apiKey, debug)
         }
     }
