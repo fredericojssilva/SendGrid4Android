@@ -2,8 +2,6 @@ package net.fredericosilva.sendgrid4android
 
 import net.fredericosilva.sendgrid4android.api.SendGridApiService
 import net.fredericosilva.sendgrid4android.models.Mail
-import net.fredericosilva.sendgrid4android.models.SendGridBody
-
 
 class SendGrid(val callback: Callback? = null) {
 
@@ -15,6 +13,10 @@ class SendGrid(val callback: Callback? = null) {
 
     fun send(mail: Mail) {
         SendGridApiService.sendEmail(mail, callback)
+    }
+
+    fun send(mail: Mail.SimpleMail) {
+        send(mail.getMail())
     }
 
     interface Callback {
